@@ -3,6 +3,9 @@
         "build": "npx @11ty/eleventy"
     },
     "devDependencies": {
-        "@11ty/eleventy": "^2.0.1"
+        "@11ty/eleventy": "^2.0.1",
+        "@commitlint/cli": "^17.7.2",
+        "@commitlint/config-angular": "^17.7.0",
+        "husky": "^8.0.3"
     }
 }
