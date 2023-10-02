@@ -1,0 +1,17 @@
+name: Build site with Eleventy
+
+on:
+  workflow_call: ~
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up environment
+        uses: ./github/workflows/setup.yaml
+      - name: Build with 11ty
+        run: npm run build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./build

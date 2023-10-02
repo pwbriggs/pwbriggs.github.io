@@ -1,0 +1,14 @@
+name: Build and deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        uses: ./github/workflows/build-11ty.yaml
+      - name: Deploy
+        uses: ./github/workflows/deploy.yaml
