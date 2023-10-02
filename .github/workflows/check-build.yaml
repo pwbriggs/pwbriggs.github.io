@@ -7,4 +7,4 @@ on:
 
 jobs:
   attempt-build:
-    uses: ./github/workflows/build-11ty.yaml
+    uses: ./.github/workflows/build-11ty.yaml

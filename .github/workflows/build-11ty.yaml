@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up environment
-        uses: ./github/workflows/setup.yaml
+        uses: ./.github/workflows/setup.yaml
       - name: Build with 11ty
         run: npm run build
       - name: Upload artifact
