@@ -2,9 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
@@ -32,6 +30,7 @@ jobs:
           path: ./build
 
   deploy:
+    if: github.event_name == "push" && github.ref == "refs/heads/main" # Don't try to deploy (it will fail) if not on main.
     permissions:
       contents: read
       pages: write
