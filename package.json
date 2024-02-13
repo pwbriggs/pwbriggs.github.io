@@ -4,8 +4,8 @@
     },
     "devDependencies": {
         "@11ty/eleventy": "^2.0.1",
-        "@commitlint/cli": "^18.6.0",
-        "@commitlint/config-angular": "^18.6.0",
+        "@commitlint/cli": "^18.6.1",
+        "@commitlint/config-angular": "^18.6.1",
         "husky": "^9.0.10"
     }
 }
