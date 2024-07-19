@@ -6,6 +6,6 @@
         "@11ty/eleventy": "^2.0.1",
         "@commitlint/cli": "^19.3.0",
         "@commitlint/config-angular": "^19.3.0",
-        "husky": "^9.0.11"
+        "husky": "^9.1.1"
     }
 }
