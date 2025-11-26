@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body {
+            background-color: antiqueWhite;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100svh;
+            margin: 0;
+            padding: .5rem;
+            box-sizing: border-box;
+        }
+
+        footer {
+            font-style: italic;
+            padding: 1rem 0;
+        }
+
+        a {
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        {{ content | safe }}
+    </main>
+    <footer>Unless otherwise noted, content on this site &copy; Peter Briggs is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. <a href="https://github.com/pwbriggs/pwbriggs.github.io">Website source</a>.</footer>
+</body>
+
+</html>
