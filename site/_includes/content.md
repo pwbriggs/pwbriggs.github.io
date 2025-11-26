@@ -1,6 +1,11 @@
 ---
 layout: base.njk
+tags: content
 ---
+<header>
+<a href="/">Peter Briggs</a>
+</header>
+
 # {{ title }}
 
 {{ content }}

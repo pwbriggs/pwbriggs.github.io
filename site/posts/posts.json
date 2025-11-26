@@ -1,4 +1,5 @@
 {
     "layout": "content.md",
-    "title": "Untitled post"
+    "title": "Untitled post",
+    "tags": ["post"]
 }
