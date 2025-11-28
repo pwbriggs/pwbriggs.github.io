@@ -7,13 +7,13 @@ export default async function(eleventyConfig) {
         type: "atom", // or "rss", "json"
         outputPath: "/feed.xml",
         collection: {
-            name: "content",
+            name: "all",
             limit: 50,
         },
         metadata: {
             language: "en",
             title: "Peter Briggs",
-            subtitle: "Peter thinks about digital gardening, humanity, technology, etc., and might write it down.",
+            subtitle: "Peter thinks about technology, humanity, the small web, etc., and might write some of it down.",
             base: "https://peter.briggs.seattle.wa.us/",
             author: {
                 name: "Peter Briggs",

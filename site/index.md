@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: Peter Briggs
+eleventyExcludeFromCollections: true
 ---
 # Peter Briggs
 I'm a student in Seattle, WA.
@@ -16,8 +17,8 @@ Here are some profiles around the internet that I control:
 I'm experimenting with writing content here. Here are some pages:
 
 <ul>
-{%- for post in collections.content -%}
-<li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+{%- for page in collections.page -%}
+<li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
 {%- endfor -%}
 </ul>
 
