@@ -17,13 +17,28 @@
             box-sizing: border-box;
         }
 
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #112;
+                color: #ddd;
+            }
+        }
+
         main {
             max-width: 40rem;
             line-height: 1.5
         }
 
+        @media screen and (width >= 50rem) {
+            main {
+                margin-left: 10%
+            }
+        }
+
         footer {
             font-style: italic;
+            font-size: 0.8em;
+            text-align: center;
             padding: 1rem 0;
         }
 
