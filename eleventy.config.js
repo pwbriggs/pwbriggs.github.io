@@ -1,4 +1,5 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import dayjs from "dayjs";
 
 export default async function(eleventyConfig) {
     eleventyConfig.setInputDirectory("site");
@@ -21,4 +22,5 @@ export default async function(eleventyConfig) {
             }
         }
     });
+    eleventyConfig.addFilter("monthYear", (date) => dayjs(date).format("MMMM YYYY"));
 };

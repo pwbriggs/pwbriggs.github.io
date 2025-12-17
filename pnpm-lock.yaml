@@ -14,6 +14,9 @@ importers:
       '@11ty/eleventy-plugin-rss':
         specifier: ^2.0.4
         version: 2.0.4
+      dayjs:
+        specifier: ^1.11.19
+        version: 1.11.19
 
 packages:
 
@@ -142,6 +145,9 @@ packages:
 
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
+
+  dayjs@1.11.19:
+    resolution: {integrity: sha512-t5EcLVS6QPBNqM2z8fakk/NKel+Xzshgt8FFKAn+qwlD1pzZWxh0nVCrvFK7ZDb6XucZeF9z8C7CBWTRIVApAw==}
 
   debug@2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
@@ -746,6 +752,8 @@ snapshots:
   commander@5.1.0: {}
 
   concat-map@0.0.1: {}
+
+  dayjs@1.11.19: {}
 
   debug@2.6.9:
     dependencies:
